@@ -1,2 +1,2 @@
-# bootstrap24
-Patch Bootstrap to 24 columns grid
+# Bootstrap24
+Patch Bootstrap CSS to 24 columns grid
