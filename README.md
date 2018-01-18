@@ -57,7 +57,7 @@ Now you can colored Bootstrap modals with CSS classes `.panel-*` such as `.panel
 
 ### No rounded corners
 
-There are new 3 CSS classes to allow to prevent Bootstrap CSS rounded corners: `.no-rounded` and `.no-rounded-tip`.
+Add 2 new CSS classes to allow to prevent Bootstrap CSS rounded corners: `.no-rounded` and `.no-rounded-tip`.
 ```html
 <pre class="no-rounded"><code>pre.no-rounded and .img-thumbnail</code></pre>
 <img src="https://via.placeholder.com/100" alt="100x100" class="img-thumbnail no-rounded"/>
