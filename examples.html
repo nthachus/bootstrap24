@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8"/>
+  <title>Usage Examples</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="bootstrap24.min.css"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="container">
+  <h2 class="nav-tabs">24 columns grid</h2>
+
+  <div class="row">
+    <div class="col-sm-3_5 col-md-3 col-lg-2_5 col-sm-push-8_5 col-md-push-9 col-lg-push-9_5">
+      <p class="bg-info">.col-sm-3_5 .col-lg-push-9_5</p>
+    </div>
+    <div class="col-sm-8_5 col-md-9 col-lg-9_5 col-sm-pull-3_5 col-md-pull-3 col-lg-pull-2_5">
+      <p class="bg-success">.col-lg-9_5 .col-sm-pull-3_5</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-5_5 col-sm-7 col-md-6_5 col-lg-6 col-xs-offset-6_5 col-sm-offset-5 col-md-offset-5_5 col-lg-offset-6">
+      <p class="bg-danger">.col-xs-5_5 .col-md-offset-5_5</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="nav-tabs">Colored tooltips</h2>
+
+  <p>
+    <a href="#" onclick="return false" data-toggle="tooltip" title="Success!" class="btn btn-success tooltip-success" data-trigger="hover">.tooltip-success</a>
+    <a href="#" onclick="return false" data-toggle="tooltip" title="Info!" class="btn btn-info tooltip-info" data-trigger="hover">.tooltip-info</a>
+    <a href="#" onclick="return false" data-toggle="tooltip" title="Warning!" class="btn btn-warning tooltip-warning" data-trigger="hover">.tooltip-warning</a>
+    <a href="#" onclick="return false" data-toggle="tooltip" title="Danger!" class="btn btn-danger tooltip-danger" data-trigger="hover">.tooltip-danger</a>
+  </p>
+</div>
+
+<div class="container">
+  <h2 class="nav-tabs">Colored modals</h2>
+
+  <p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-color="panel-success">success modal</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-color="panel-info">info modal</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-color="panel-warning">warning modal</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-color="panel-danger">danger modal</button>
+  </p>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content panel-info">
+        <div class="modal-header panel-heading">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal Title</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <!--
+        <div class="modal-footer panel-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        -->
+      </div>
+      <!-- /.modal-content -->
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <h2 class="nav-tabs">No rounded corners</h2>
+
+  <pre class="no-rounded"><code>&lt;pre&gt; and .img-thumbnail</code></pre>
+  <p>
+    <img src="https://via.placeholder.com/100" alt="100x100" class="img-thumbnail no-rounded"/>
+  </p>
+
+  <form action="" onsubmit="return false">
+    <div class="form-group form-group-sm">
+      <label for="inputName1">Name</label>
+      <input type="email" class="form-control no-rounded" id="inputName1" placeholder=".form-group-sm > .form-control.no-rounded"/>
+    </div>
+    <div class="form-group">
+      <label for="inputTel1">Phone</label>
+      <input type="tel" class="form-control input-sm no-rounded" id="inputTel1" placeholder=".input-sm.no-rounded"/>
+    </div>
+    <p class="input-group input-group-sm">
+      <span class="input-group-addon input-sm no-rounded">.input-group-addon.no-rounded</span>
+      <input type="text" class="form-control no-rounded" placeholder=".input-group-sm > .form-control.no-rounded"/>
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-warning no-rounded"><i class="hidden-xs">.input-group-btn > </i>.btn.no-rounded</button>
+      </span>
+    </p>
+    <div class="form-group">
+      <button type="submit" class="btn btn-info btn-sm no-rounded">.btn-sm.no-rounded</button>
+    </div>
+  </form>
+
+  <p class="btn-group-vertical btn-group-sm" role="group">
+    <button type="button" onclick="return false" class="btn btn-success no-rounded">.btn-group-sm > .btn.no-rounded</button>
+    <button type="button" onclick="return false" class="btn btn-danger no-rounded">.btn-group-sm > .btn.no-rounded</button>
+  </p>
+
+  <div class="dropup">
+    <button type="button" class="btn btn-default dropdown-toggle no-rounded" id="myMenu1"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">.dropdown-menu.no-rounded <span class="caret"></span></button>
+    <ul class="dropdown-menu no-rounded" aria-labelledby="myMenu1">
+      <li><a href="#" onclick="return false">Action</a></li>
+      <li><a href="#" onclick="return false">Another action</a></li>
+    </ul>
+  </div>
+
+  <br/>
+  <ul class="nav nav-tabs no-rounded">
+    <li role="presentation" class="active"><a href="#" onclick="return false">.nav-tabs.no-rounded</a></li>
+    <li role="presentation"><a href="#" onclick="return false">.nav-justified.no-rounded</a></li>
+  </ul>
+
+  <br/>
+  <ul class="nav nav-pills no-rounded">
+    <li role="presentation" class="active"><a href="#" onclick="return false">.nav-pills.no-rounded</a></li>
+    <li role="presentation"><a href="#" onclick="return false">.nav-tabs-justified.no-rounded</a></li>
+  </ul>
+
+  <br/>
+  <nav class="navbar navbar-inverse no-rounded">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed no-rounded" data-toggle="collapse" data-target="#myNavbar1" aria-expanded="false">
+          <span class="sr-only">.navbar-toggle.no-rounded</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" onclick="return false">.navbar.no-rounded</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="myNavbar1">
+        <ul class="nav navbar-nav navbar-right no-rounded">
+          <li class="active"><a href="#" onclick="return false">.navbar-nav.no-rounded</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="return false">Action</a></li>
+              <li><a href="#" onclick="return false">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <ol class="breadcrumb no-rounded">
+    <li><a href="#" onclick="return false">.breadcrumb.no-rounded</a></li>
+    <li class="active">active</li>
+  </ol>
+
+  <div class="alert alert-success no-rounded" role="alert">.alert.no-rounded</div>
+  <div class="progress no-rounded">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">.progress.no-rounded</div>
+  </div>
+
+  <div class="panel panel-primary no-rounded">
+    <div class="panel-heading">.panel.no-rounded</div>
+    <div class="panel-body">Panel content</div>
+    <!-- Table -->
+    <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr class="warning">
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="4">.pagination.no-rounded</th>
+      </tr>
+    </tfoot>
+    </table>
+    <!--<div class="panel-footer">Panel footer</div>-->
+  </div>
+
+  <nav>
+    <ul class="pagination pagination-sm no-rounded show clearfix">
+      <li class="disabled">
+        <a href="#" onclick="return false" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="active"><span>1</span></li>
+      <li><a href="#" onclick="return false">2</a></li>
+      <li>
+        <a href="#" onclick="return false" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <p>
+    <a href="#" data-toggle="tooltip" title="Default tooltip" class="btn btn-info no-rounded no-rounded-tip">.no-rounded-tip + .tooltip</a>
+
+    <a href="#" onclick="return false" class="btn btn-danger no-rounded no-rounded-tip" role="button" data-toggle="popover" data-trigger="focus"
+       title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">.no-rounded-tip + .popover</a>
+
+    <button type="button" class="btn btn-primary no-rounded" data-toggle="modal" data-target="#myModal2">.modal-content.no-rounded</button>
+  </p>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content panel-info no-rounded">
+        <div class="modal-header panel-heading">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel2">Modal Title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer panel-footer">
+          <button type="button" class="btn btn-default btn-sm no-rounded" data-dismiss="modal">&nbsp; Close &nbsp;</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <h2 class="nav-tabs">Extras</h2>
+
+  <h4>Labels in <code>.form-horizontal</code> can be aligned left with existing <code>.text-left</code> class.</h4>
+  <form class="form-horizontal clearfix" action="" onsubmit="return false">
+    <div class="form-group">
+      <label for="inputEmail1" class="col-sm-2_5 col-md-2 control-label text-left">Email <b class="text-danger">*</b></label>
+      <div class="col-sm-6_5 col-md-6">
+        <input type="email" class="form-control" id="inputEmail1" placeholder="Enter email"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword1" class="col-sm-2_5 col-md-2 control-label text-left">Password <b class="text-danger">*</b></label>
+      <div class="col-sm-6_5 col-md-6">
+        <input type="password" class="form-control" id="inputPassword1" placeholder="Enter password"/>
+      </div>
+    </div>
+    <!--
+    <div class="form-group">
+      <div class="col-sm-6_5 col-md-6 col-sm-offset-2_5 col-md-offset-2">
+        <div class="checkbox">
+          <label><input type="checkbox"/> Remember me</label>
+        </div>
+      </div>
+    </div>
+    -->
+    <div class="form-group">
+      <div class="col-sm-6_5 col-md-6 col-sm-offset-2_5 col-md-offset-2">
+        <button type="submit" class="btn btn-default">Sign Up</button>
+      </div>
+    </div>
+  </form>
+
+  <h4>Use <code>.row-condensed</code> to make Bootstrap grids more compact by cutting column padding in half.</h4>
+  <div class="row row-condensed">
+    <div class="col-md-7_5 col-lg-7"><p class="bg-info">.col-md-7_5</p></div>
+    <div class="col-md-4_5 col-lg-4"><p class="bg-success">.col-md-4_5</p></div>
+  </div>
+
+  <h4>Support horizontal collapsing.</h4>
+  <div class="clearfix" style="min-height:304px;">
+    <p>
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseX">collapse X</button>
+    </p>
+    <div class="collapse width" id="collapseX">
+      <p class="bg-success" style="width:250px; height:250px;">&nbsp;</p>
+    </div>
+  </div>
+
+  <h4>New helper classes: <code>.no-underline</code>, <code>.bg-transparent</code>, <code>.full-width</code>, <code>.full-height</code></h4>
+  <p>
+    <kbd>e.g.</kbd>
+    <a href="#" onclick="return false" class="no-underline">.no-underline link</a>
+  </p>
+
+</div>
+
+<hr/>
+<footer class="container">
+  <p class="text-muted">Copyright &copy; 2018 Thach Nguyen; Licensed MIT</p>
+</footer>
+
+<!-- jQuery and Bootstrap -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"][title]').tooltip();
+    $('[data-toggle="popover"][data-content]').popover();
+
+    $("#myModal").on("show.bs.modal", function (event) {
+      var type = $(event.relatedTarget).data("color");
+      $(".modal-content", this).attr("class", "modal-content " + type);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "bootstrap24",
+  "description": "Patch Bootstrap CSS to 24 columns grid",
+  "version": "3.3.0",
+  "homepage": "https://github.com/nthachus/bootstrap24",
+  "author": {
+    "name": "Thach Nguyen",
+    "email": "nthachus@gmail.com"
+  },
+  "keywords": [
+    "bootstrap",
+    "24 columns",
+    "bootstrap css",
+    "24 columns grid",
+    "colored tooltips",
+    "colored modals",
+    "bootstrap no rounded",
+    "collapsing width"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nthachus/bootstrap24.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nthachus/bootstrap24/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "scripts": {
+    "build": "cleancss -o bootstrap24.min.css bootstrap24.css"
+  },
+  "devDependencies": {
+    "clean-css-cli": "~4.1.10"
+  }
+}
